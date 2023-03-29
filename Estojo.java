@@ -1,14 +1,13 @@
-package cursoemvideo;
+package cursoemvideo_visibilidade;
 
 public class Estojo {
    private int QUANTIDADE_MAXIMA_CANETA = 10;
-	String modelo;
-	String cor;
-	int qtdlapis;
-	int qtdcaneta;
-	boolean fechado;
+	public String modelo;
+	public String cor;
+	public int qtdcaneta;
+	private boolean fechado;
 	
-	void status() {
+	public void status() {
 	System.out.println("O modelo é " + modelo);
 	System.out.println("A cor é " + cor);
 	System.out.println("Quantidade de caneta no estojo é  " + qtdcaneta);
@@ -16,15 +15,15 @@ public class Estojo {
 
 	}
 	
-	void abrir() {
+	public void abrir() {
 		this.fechado = false;
 	}
 	
-	void fechar() {
+	public void fechar() {
 		this.fechado = true;
 	}
 	
-	void guardar() {
+	protected void guardar() {
 		if(this.fechado == true) {
 			System.out.println("Não posso guardar nada, estou fechado");
 		} else {
