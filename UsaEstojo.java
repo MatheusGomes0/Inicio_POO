@@ -1,4 +1,4 @@
-package cursoemvideo;
+package cursoemvideo_visibilidade;
 
 public class UsaEstojo {
 	public static void main(String[] args) {
